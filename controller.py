@@ -5,7 +5,7 @@ OSKen Layer 2 Learning Switch
 
 Note: Requires Python3.8 or higher (uses the ':=' operator)
 """
-from os_ken.base.app_manager import os_kenApp
+from os_ken.base.app_manager import OSkenApp
 from os_ken.controller import ofp_event
 from os_ken.controller.handler import HANDSHAKE_DISPATCHER, CONFIG_DISPATCHER, MAIN_DISPATCHER, set_ev_cls
 from os_ken.ofproto import ofproto_v1_3
