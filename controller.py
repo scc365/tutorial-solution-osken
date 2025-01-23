@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 
 """
-Ryu Layer 2 Learning Switch
+OSKen Layer 2 Learning Switch
 
 Note: Requires Python3.8 or higher (uses the ':=' operator)
 """
-from ryu.base.app_manager import RyuApp
-from ryu.controller import ofp_event
-from ryu.controller.handler import HANDSHAKE_DISPATCHER, CONFIG_DISPATCHER, MAIN_DISPATCHER, set_ev_cls
-from ryu.ofproto import ofproto_v1_3
-from ryu.lib.packet import packet
-from ryu.lib.packet.ethernet import ethernet
-from ryu.lib.packet.ipv6 import ipv6
-from ryu.lib.packet.lldp import lldp
-from ryu.lib.dpid import dpid_to_str
+from os_ken.base.app_manager import os_kenApp
+from os_ken.controller import ofp_event
+from os_ken.controller.handler import HANDSHAKE_DISPATCHER, CONFIG_DISPATCHER, MAIN_DISPATCHER, set_ev_cls
+from os_ken.ofproto import ofproto_v1_3
+from os_ken.lib.packet import packet
+from os_ken.lib.packet.ethernet import ethernet
+from os_ken.lib.packet.ipv6 import ipv6
+from os_ken.lib.packet.lldp import lldp
+from os_ken.lib.dpid import dpid_to_str
 
 
-class Controller(RyuApp):
+class Controller(OSKenApp):
 
     OFP_VERSIONS = [ofproto_v1_3.OFP_VERSION]
 
